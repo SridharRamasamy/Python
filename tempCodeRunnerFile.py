@@ -1,3 +1,19 @@
-m = input("User input : ")
-n = int(m)
-print("1", math.log2(n)), "\n", "2", int(math.cos(n)), "\n","3", int(math.e**n))
+
+# # # String slicing ----For strings - indexing & reverse(negative) indexing
+# name = "Sasirekha"
+# print( name[0] )
+# print( name[0], name[3] )
+# print( name[0:3] )
+# print( name[:3] )
+# print( name[3:] )
+# print( name[2:6] )
+# print( name[0:19:2] )      # [start:stop:step]
+# print( name[0:19:3] )
+# print( name[0:19:4] )
+# print( name[-5:-2] )
+# print( name[::-1] )           # reverse the string direction
+# print( name[-3:-1] ) 
+# print( name[2:-2] ) 
+
+# x = slice(2,-2)
+# print( name[x])

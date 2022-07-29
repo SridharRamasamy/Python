@@ -136,3 +136,117 @@
 # m = input("User input : ")
 # n = int(m)
 # print("1.", int(math.log2(n)), "\n", "2.", int(math.cos(n)), "\n","3.", int(math.e**n))
+
+
+
+
+
+
+
+# # # Ifelse --True/False condition  ----Conditional Statements
+# # # Relational operators --True/False will be the answer
+# pwd_correct = False
+# if pwd_correct
+#     print("Logged in")
+# else:
+#     print ("logged out")
+#     print ("Incorrect password")
+#     print("Try again")
+# print("Bye")
+
+# n = 20
+# if n>=10:
+#     print ("The user input is greater than or equal to 20")
+# else:
+#     print ("The user input is less than 20")
+
+# num = input ("please provide the number : ")        
+# if int(num) % 10 == 0 :                               # the user provided input is always taken as string so it needs to be changed to integer
+#     print (" The number yopu have entered is " + str(num) + "and it is exactly divisible by 10")
+# else:
+#      print (" The number yopu have entered is " + str(num) + "and it is not exactly divisible by 10")
+
+# num = input ("please provide the number : ")        
+# if ((int(num) % 10 == 0) and (int(num) % 5 == 0)):                               # the user provided input is always taken as string so it needs to be changed to integer
+#     print (" The number yopu have entered is " + str(num) + " and it is exactly divisible by 10 and 5")
+# elif int(num) % 10 != 0 and int(num) % 5 == 0:
+#     print (" The number yopu have entered is " + str(num) + " and it is not exactly divisible by 10 but exactly divisble by 5")
+# else:
+#      print (" The number yopu have entered is " + str(num) + " and it is not exactly divisible by 10 and 5")
+
+# score = 169
+# if score >= 350:
+#     print("India will win the game")
+# elif score >= 250:
+#     print("India might win the game")
+# elif score >= 150:
+#     print("Australia might win the game")
+# else:
+#     print("Australia will win the game")
+
+# # # # nested if:
+# # Check if the given number is a 3 digit even number
+# m = input("Check the 3 digit even number :")
+# n = int(m)
+# if n % 2 == 0 :
+#     if n >= 100 and n <=999:
+#         print(" The given number" + str(n) + " is a 3 digit even number")
+#     else:
+#         print (" The given number" + str(n) + " is non 3 digit even number")
+# else:
+#     print (" The given number" + str(n) + " is an odd numner")
+
+# # Check if th student name starts with S:
+# name = input("Enter the student name :")
+# if name[0] == 'S' or name[0] == 's':
+#     print (" The given student name starts with S:")
+# else:
+#     print(" The given student name does not start with S:")
+
+
+# # # # bitwise operators ( & and, | or, ~ not, ^ exor(exclusive or), << left shift, >> right shift  )
+# # print ( 3&4, 3|4, 3^4 ,12<<1, 12<<2, 12>>1 )
+# # print( 12<<1, 12<<2, 3 & 4)
+
+
+# # # String slicing ----For strings - indexing & reverse(negative) indexing
+# name = "Sasirekha"
+# print( name[0] )
+# print( name[0], name[3] )
+# print( name[0:3] )
+# print( name[:3] )
+# print( name[3:] )
+# print( name[2:6] )
+# print( name[0:19:2] )      # [start:stop:step]
+# print( name[0:19:3] )
+# print( name[0:19:4] )
+# print( name[-5:-2] )
+# print( name[::-1] )           # reverse the string direction
+# print( name[-3:-1] ) 
+# print( name[2:-2] ) 
+
+# x = slice(2,-2)
+# print( name[x])
+
+# # Assignment 4:
+# # H
+# # Ha
+# # Hap
+# # Happ
+# # Happy
+# # y
+# # py
+# # ppy
+# # appy
+# # Happy
+# str ="Happy"
+# print(str[0])
+# print(str[0:2])
+# print(str[0:3])
+# print(str[0:4])
+# print(str[0:5])
+# print(str[-1])
+# print(str[3:])
+# print(str[2:])
+# print(str[1:])
+# print(str[0:])
