@@ -250,3 +250,21 @@
 # print(str[2:])
 # print(str[1:])
 # print(str[0:])
+
+
+# # Lists           ----------Modify, append , insert, remove using del, remove using pop()
+# cities = ["Chennai", "Trichy", "Madurai", "Coimbatore"]
+# value = [2,34,535,24,234523,23452,2523,5]
+# list3 = [ value, 213, 23233]
+# print(cities[0], value[3], list3[2])
+# cities[2] = "Namakkal"
+# print(cities[2])
+# cities.append("karur")
+# print (cities)
+# print(cities[4])
+# cities.append("Tirupur")
+# print (cities)
+# cities.insert(3,"Tanjore")
+# print (cities)
+# del cities[1]
+# print (cities)
