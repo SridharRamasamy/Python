@@ -73,5 +73,5 @@ print("Dear "+name +",\nYou have " + str(leave_balance) + " days of Leave Balanc
 
 
 # # # User Input
-# name = input ("what is your name")
-# print("Hello" + name)
+name = input ("what is your name")
+print("Hello" + name)
