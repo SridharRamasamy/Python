@@ -70,3 +70,8 @@ print(int(float(number))+1)
 
 name , leave_balance, year = "Anand", 15, 2021
 print("Dear "+name +",\nYou have " + str(leave_balance) + " days of Leave Balance for this \nYear(" + str(year) +")")
+
+
+# # # User Input
+# name = input ("what is your name")
+# print("Hello" + name)
