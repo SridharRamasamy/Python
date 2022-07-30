@@ -252,7 +252,7 @@
 # print(str[0:])
 
 
-# # Lists           ----------Modify, append , insert, remove using del, remove using pop()
+# # # Lists           ----------Modify, append , insert, remove using del, remove using pop()
 # cities = ["Chennai", "Trichy", "Madurai", "Coimbatore"]
 # value = [2,34,535,24,234523,23452,2523,5]
 # list3 = [ value, 213, 23233]
@@ -262,9 +262,114 @@
 # cities.append("karur")
 # print (cities)
 # print(cities[4])
-# cities.append("Tirupur")
+# cities.append("Tirupur")         # append will not return and we cannot get that in variable
 # print (cities)
 # cities.insert(3,"Tanjore")
 # print (cities)
 # del cities[1]
 # print (cities)
+# delete = cities.pop(2)        # pop will return and get that in variable
+# cities.remove("karur")
+# print (cities)
+# cities.append("karur")
+# print(cities)
+# cities.append("karur")
+# print(cities)  
+# cities.insert(5, "bangalore")
+# print(cities)
+# cities.remove("karur")
+# print(cities)
+# print(sorted(cities))             # temporary sort
+# print(cities)              
+# print(sorted(value))
+# cities.sort()
+# print(cities)
+# cities.reverse()
+# print(cities)
+# cities.reverse()
+# print(cities)
+
+
+# # # loop - to repeat aa set of code
+# # # while loop
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# letter = ' '
+# while not letter.isalpha():
+#     letter = input("Enter an alphabet: ")
+# print("You have entered " + letter)
+
+# # # print 1 to 100
+# num =1
+# while num <= 100:
+#     print(num)
+#     num = num + 1
+# print("You have reached 100")
+
+
+# # # for loop
+# for q in range(1, 100 +1):
+#     print(q)
+# else:
+#     print("Bye da. It is working fine")
+# for q in range(1, 101):
+#     print(q)
+# range(1, 10)
+# print(list(range(1, 10)))
+# print(list(range(1, 10, 2)))
+# print(list(range(1, 10, 3)))
+# print(list(range(50, 100)))
+# print(list(range(100, 50)))
+# print(list(range(100, 50, -2)))
+# print(list(range(50, 100, -2)))
+# print(list(range(50, 100, 2)))
+
+# cities = ["Chennai", "Trichy", "Madurai", "Coimbatore"]
+# for i in cities:
+#     print(i)
+# list = [2,3,4,5,6]
+# for i in list:
+#     print(i*i)
+
+
+
+# # # # # Guess the number game with unlimited attempts
+# import random
+# num = random.randint(1,20)
+# guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
+# while num != guess:
+#     if guess > num :
+#         print("your have guessed a higher number")
+
+#     guess = int(input("Guess again: "))
+# print("Your won")
+
+
+# # # # Guess the number game with only 4 attempts
+import random
+from urllib.request import HTTPBasicAuthHandler
+num = random.randint(1,20)
+attempt = 1
+guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
+while num != guess and attempt <= 4:
+    attempt += 1
+    if guess > num:
+        print("your have guessed a higher number")
+    else:
+        print("your have guessed a lower number")
+    guess = int(input("Guess again: "))    
+print("Your won")
+
+
+# # # # Assignment 5:
+# # # # Get input number n from users. Print all the factors of n
+num = int(input("Find the factor for the number: "))
+w
+
+
+# # # # Get a list of todo lists from the user and add it to a to_do list. Print the list.
+
+# # # # Give an array of integers. Find a peak element in it. An array element is a peak if it is NOT smaller than its neighbours. 
+# # # # For corner elements we need to consider only one neighbour eg: in [3,4,7,6,5] - 7 is a peak element
+
+# # # #  Move all negative numbers to the end of the list. List = [3,4,5,-2,-1,8,0,-5,6]

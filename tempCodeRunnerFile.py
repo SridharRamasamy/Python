@@ -1,19 +1,11 @@
 
-# # # String slicing ----For strings - indexing & reverse(negative) indexing
-# name = "Sasirekha"
-# print( name[0] )
-# print( name[0], name[3] )
-# print( name[0:3] )
-# print( name[:3] )
-# print( name[3:] )
-# print( name[2:6] )
-# print( name[0:19:2] )      # [start:stop:step]
-# print( name[0:19:3] )
-# print( name[0:19:4] )
-# print( name[-5:-2] )
-# print( name[::-1] )           # reverse the string direction
-# print( name[-3:-1] ) 
-# print( name[2:-2] ) 
+# # # # # Guess the number game with unlimited attempts
+# import random
+# num = random.randint(1,20)
+# guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
+# while num != guess:
+#     if guess > num :
+#         print("your have guessed a higher number")
 
-# x = slice(2,-2)
-# print( name[x])
+#     guess = int(input("Guess again: "))
+# print("Your won")
