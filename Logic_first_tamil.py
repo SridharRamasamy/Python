@@ -4,9 +4,14 @@
 # # # Ctrl + ~
 
 
+
 # # # Basics of python
+# # # Type casting - example: converting a data type from integer type to String type
+# # # String Handling
+# # # Multiple assignments to a variable
+# # # FMPL - Functions, Modules(Collection of functions), Package(Collection of modules), Libraries(Collection of Packages)
 # # # Functions - Inbuilt functions & User defined functions
-# # # Inbuilt Functions
+# # # Inbuilt Functions - print, input
 
 # # # Variables
 # import this
@@ -45,6 +50,7 @@
 # print("happy\nbirthday")                  # \ represents escape sequence
 # print("happy\tbirthday")                  # \ represents escape sequence
 # print(message * 10)
+
 # # # # Multiple assignments
 # name , age , height = "john", 30, 178
 # print(age)
@@ -53,9 +59,11 @@
 # print(like)
 # print (like / dislike)
 # print (int(like / dislike))
+
+
 # # # # Type casting
 # otp = 13234
-# print("your otp is" + str(otp))      #  Concatenation btw string & integers is not possible
+# print("your otp is" + str(otp))        #  Concatenation btw string & integers is not possible
 # print(type(otp))                       #  Changing the type of a data or Data type is called type casting
 # count = "20"
 # print(int(count)+ 1)
@@ -78,7 +86,7 @@
 # # # # User Input
 # name = input ("what is your name : ")
 # print("Hello " + name)
-# height = input ("what is your height : ")         # # Always the input will be taken as String
+# height = int(input ("what is your height : ") )        # # Always the input will be taken as String
 # print(type(height))
 # print("Your height is " + height +" cms" )
 # print("Your height is " + str(int(height)/2.54) +" inch tall" )
@@ -115,7 +123,7 @@
 # (a+b)*5
 # a+b*5
 # a = 10.9
-# b = 10.1
+# b = 10.1  
 # c= 10.5
 # d = -5.9
 # print(round(a), round(b), round(c), abs(d), pow(d,3), a, a**3, max(a,b), min(a,b))
@@ -346,25 +354,24 @@
 
 
 # # # # Guess the number game with only 4 attempts
-import random
-from urllib.request import HTTPBasicAuthHandler
-num = random.randint(1,20)
-attempt = 1
-guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
-while num != guess and attempt <= 4:
-    attempt += 1
-    if guess > num:
-        print("your have guessed a higher number")
-    else:
-        print("your have guessed a lower number")
-    guess = int(input("Guess again: "))    
-print("Your won")
+# import random
+# from urllib.request import HTTPBasicAuthHandler
+# num = random.randint(1,20)
+# attempt = 1
+# guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
+# while num != guess and attempt <= 4:
+#     attempt += 1
+#     if guess > num:
+#         print("your have guessed a higher number")
+#     else:
+#         print("your have guessed a lower number")
+#     guess = int(input("Guess again: "))    
+# print("Your won")
 
 
 # # # # Assignment 5:
 # # # # Get input number n from users. Print all the factors of n
-num = int(input("Find the factor for the number: "))
-w
+# num = int(input("Find the factor for the number: "))
 
 
 # # # # Get a list of todo lists from the user and add it to a to_do list. Print the list.
