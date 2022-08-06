@@ -1,11 +1,5 @@
-
-# # # # # Guess the number game with unlimited attempts
-# import random
-# num = random.randint(1,20)
-# guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
-# while num != guess:
-#     if guess > num :
-#         print("your have guessed a higher number")
-
-#     guess = int(input("Guess again: "))
-# print("Your won")
+a = 10.9
+b = 10.1
+c= 10.5
+d = -5.9
+print(round(a), round(b), round(c), abs(d), pow(d,3), a, a**3, max(a,b), min(a,b))
