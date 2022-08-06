@@ -380,5 +380,3 @@
 # # # # For corner elements we need to consider only one neighbour eg: in [3,4,7,6,5] - 7 is a peak element
 
 # # # #  Move all negative numbers to the end of the list. List = [3,4,5,-2,-1,8,0,-5,6]
-
-I am sridhar
