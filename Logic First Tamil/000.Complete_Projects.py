@@ -5,6 +5,19 @@
 # ctrl + K + C
 # ctrl + K + U  
 # ctrl + F5
+# ctrl + N
+# crtl + W
+# ctrl + B   to open the blade window on left side
+# enter
+# ctrl + enter 
+# ctrl + shift + ＼   to toggle between the start and end of the function
+# alt + up          
+# alt + down
+# alt + shift + up     to copy the line upwards
+# alt + shift + down      to copy the line downwards 
+# ctrl + D    to select all the same namings
+# alt + mouse (left click)    for multi-cursor typing
+
 
 
 
