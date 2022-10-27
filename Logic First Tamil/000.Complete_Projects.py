@@ -1,33 +1,36 @@
 # # #  vs code shortcuts
-# # # Ctrl + P
+# # # ctrl + P
 # # # >Git:
-# # # Ctrl + ~
-# ctrl + K + C
-# ctrl + K + U  
+# # # ctrl + ~    to open and close the terminal
+# ctrl + K + C    to add hashtag to the line
+# ctrl + K + U    to remove hashtag from the line
+
 # ctrl + F5
 # ctrl + N
 # crtl + W
 # ctrl + B   to open the blade window on left side
+
 # enter
 # ctrl + enter 
+
 # ctrl + shift + ＼   to toggle between the start and end of the function
-# alt + up          
-# alt + down
-# alt + shift + up     to copy the line upwards
-# alt + shift + down      to copy the line downwards 
-# ctrl + D    to select all the same namings
+# alt + up            to move the line upwards
+# alt + down          to move the line downwards 
+# alt + shift + up    to copy the line upwards
+# alt + shift + down  to copy the line downwards 
+# ctrl + D            to select all the same namings
 # alt + mouse (left click)    for multi-cursor typing
-
-
 
 
 # # # Basics of python
 # # # Type casting - example: converting a data type from integer type to String type
 # # # String Handling
 # # # Multiple assignments to a variable
-# # # FMPL - Functions, Modules(Collection of functions), Package(Collection of modules), Libraries(Collection of Packages)
+# # # FMPL - Functions, Modules(Collection of functions, invoked by dot), Package(Collection of modules), Libraries(Collection of Packages)
 # # # Functions - Inbuilt functions & User defined functions
-# # # Inbuilt Functions - print, input
+# # # Inbuilt Functions - print, input, with string modules 
+# # # Importing the math modules
+
 
 # # # Variables
 # import this
@@ -38,11 +41,11 @@
 # name = "John"
 # print ("hi " + name)
 # name = "John"        # string  - Dynamically typed language (((No need mention the data type, like int price = "45" ))) 
-# price = 45           # integer  - Starts with ( letter or _) Dont use capital letters in python
+# price = 45           # integer  - Variable name Starts with ( letter or _) Dont use capital letters in python
 # Amount = 35.5        # float
-# child = True        # Boolean 
+# child = True         # Boolean 
 # print (child)
-
+# print (Amount, price, 20)
 
 
 # # # # string handling
@@ -55,7 +58,7 @@
 # message ="happy birthday"
 # print (message.title())
 # print(len(message))          #len string method  "returns" the length
-# print(message.find("y"))      
+# print(message.find("p"))      
 # print(message.find("q"))
 # print(message.count("p"))
 # print(message.replace("p","w"))
@@ -73,8 +76,8 @@
 # like = dislike = 100
 # print (like * dislike)
 # print(like)
-# print (like / dislike)
-# print (int(like / dislike))
+# print (like / dislike)           # by default float is returned   
+# print (int(like / dislike))       # here int is returned instead of float
 
 
 # # # # Type casting
@@ -126,7 +129,21 @@
 # print ("Username : " + username, "\n", "Email : " + email,"\n", "Ph : " + phone)
 # print("*************************")
 
+# **********************************************************************************************************
+# Type casting
+# String handling 
+# Modules - For strings(Inbuilt, user defined), For math(In built, user defined)
+# String concatenation (Str & int will not join)
+# Math Operators 
+# Relational operators( If/else, elif, nested if conditional statements (True/False))
+# Bit Operators
+# import math module, import random module === module.function(var)
+# String indexing, reverse indexing, Slicing  # [start:stop:step]
+# Lists           ----------Modify, append , insert, remove using del, remove using pop()
+# Loop to repeat the set of code(While loop, For loop)
 
+
+# **********************************************************************************************************
 
 # # # # Math Operations
 # a = 10
@@ -135,7 +152,7 @@
 # a - b
 # a*b
 # a/b   # gives output in float
-# int(a/b)
+# int(a/b)clear
 # a/4
 # b/2
 # (a+b)*5
@@ -147,12 +164,13 @@
 # print(round(a), round(b), round(c), abs(d), pow(d,3), a, a**3, max(a,b), min(a,b))
 # # importing math module for various mathematical operations   https://www.w3schools.com/python/module_math.asp   https://docs.python.org/3/library/math.html
 # a = 10.9
-# import math
-# print(math.ceil(a))   # rounds to te next integer
-# print(math.floor(a))   # rounds to te next integer
+# import math  # # Userdefined module
+# print(math.ceil(a))   # rounds to te next highest integer
+# print(math.floor(a))   # rounds to te next lowest integer
 # print(math.factorial(int(a)))
-# a=5
-# print(a%2)
+# a=7
+# print(a%4)
+
 
 # # # Assignment :3
 # # Get a number n from user, compute and print the following values
@@ -162,10 +180,6 @@
 # m = input("User input : ")
 # n = int(m)
 # print("1.", int(math.log2(n)), "\n", "2.", int(math.cos(n)), "\n","3.", int(math.e**n))
-
-
-
-
 
 
 
@@ -222,6 +236,16 @@
 # else:
 #     print (" The given number" + str(n) + " is an odd numner")
 
+# n = int(m)
+# if n >= 100 and n <=999:               
+#     if n % 2 == 0 :
+#         print(" The given number" + str(n) + " is a 3 digit even number")
+#     else:
+#         print (" The given number" + str(n) + " is 3 digit odd number")
+# else:
+#     print (" The given number" + str(n) + " is not a 3 digit numner")
+
+
 # # Check if th student name starts with S:
 # name = input("Enter the student name :")
 # if name[0] == 'S' or name[0] == 's':
@@ -230,9 +254,9 @@
 #     print(" The given student name does not start with S:")
 
 
-# # # # bitwise operators ( & and, | or, ~ not, ^ exor(exclusive or), << left shift, >> right shift  )
-# # print ( 3&4, 3|4, 3^4 ,12<<1, 12<<2, 12>>1 )
-# # print( 12<<1, 12<<2, 3 & 4)
+# # # # bitwise operators ( & and, | or, ~ not, ^ exor(exclusive/Strict or), << left shift, >> right shift  ) Will convert the integer to binary and the operations will happen in the corresponding bit
+# print ( 3&4, 3|4, 3^4 ,12<<1, 12<<2, 12>>1 )
+# print( 12<<1, 12<<2, 3 & 4)
 
 
 # # # String slicing ----For strings - indexing & reverse(negative) indexing
@@ -255,7 +279,7 @@
 # print( name[x])
 
 # # Assignment 4:
-# # H
+# # Hclear
 # # Ha
 # # Hap
 # # Happ
@@ -265,25 +289,26 @@
 # # ppy
 # # appy
 # # Happy
-# str ="Happy"
-# print(str[0])
-# print(str[0:2])
-# print(str[0:3])
-# print(str[0:4])
-# print(str[0:5])
-# print(str[-1])
-# print(str[3:])
-# print(str[2:])
-# print(str[1:])
-# print(str[0:])
+# name ="Happy"
+# print(name[0])
+# print(name[0:2])
+# print(name[0:3])
+# print(name[0:4])
+# print(name[0:5])
+# print(name[-1])
+# print(name[3:])
+# print(name[2:])
+# print(name[1:])
+# print(name[0:])
 
 
-# # # Lists           ----------Modify, append , insert, remove using del, remove using pop()
+# Lists           ----------Modify, append , insert, remove using del, remove using pop(), sorted(temporary), sort(permanent)
 # cities = ["Chennai", "Trichy", "Madurai", "Coimbatore"]
 # value = [2,34,535,24,234523,23452,2523,5]
 # list3 = [ value, 213, 23233]
 # print(cities[0], value[3], list3[2])
 # cities[2] = "Namakkal"
+# print (cities)
 # print(cities[2])
 # cities.append("karur")
 # print (cities)
@@ -316,7 +341,7 @@
 # print(cities)
 
 
-# # # loop - to repeat aa set of code
+# # # loop - to repeat a set of code
 # # # while loop
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -351,8 +376,8 @@
 # print(list(range(50, 100, 2)))
 
 # cities = ["Chennai", "Trichy", "Madurai", "Coimbatore"]
-# for i in cities:
-#     print(i)
+# for n in cities:s
+#     print(n)
 # list = [2,3,4,5,6]
 # for i in list:
 #     print(i*i)
@@ -371,9 +396,8 @@
 # print("Your won")
 
 
-# # # # Guess the number game with only 4 attempts
+# # # Guess the number game with only 4 attempts
 # import random
-# from urllib.request import HTTPBasicAuthHandler
 # num = random.randint(1,20)
 # attempt = 1
 # guess = int(input("Can you guess the number I am thinking? Its less than 20 : "))
@@ -384,7 +408,10 @@
 #     else:
 #         print("your have guessed a lower number")
 #     guess = int(input("Guess again: "))    
-# print("Your won")
+# if attempt <= 4:
+#     print("Your won")
+# else:
+#     print ("You Lost & You have used all your attempts")
 
 
 # # # # Assignment 5:
