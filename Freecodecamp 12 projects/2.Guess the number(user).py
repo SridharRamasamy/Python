@@ -15,7 +15,7 @@ def guess():
             print(f"Congrats, You guessed the right number {guess} correctly")
 guess()
 
-# or 
+# # or 
 
 def guess(x):
     random_number = random.randint(1,x)
@@ -30,7 +30,7 @@ def guess(x):
             print(f"Congrats, You guessed the right number {guess} correctly")
 guess(5)
 
-# or 
+# # or 
 
 def guess(x):
     random_number = random.randint(x,100)
