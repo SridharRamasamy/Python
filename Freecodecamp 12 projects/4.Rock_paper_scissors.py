@@ -1,5 +1,5 @@
-# Project 4:
-# Rock paper scissors 
+# # Project 4:
+# # Rock paper scissors 
 import random
 def play():
     user = input (" 'r' for rock, 'p' for paper, 's' for scissors : ")
@@ -42,4 +42,18 @@ def is_win(player, opponent):
     #  r > s, s > p, p > r
     if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
         return True
+print(play())
+
+# # or
+
+import random
+def play():
+    user = input (" 'r' for rock, 'p' for paper, 's' for scissors : ")
+    Computer = random.choice(['r','p','s'])
+    if user == Computer:   #  r > s, s > p, p > r
+        return 'tie'
+    if (user == 'r' and Computer == 's') or (user == 's' and Computer == 'p') or (user == 'p' and Computer == 'r'):
+        return 'Your Won'
+    if (user == 's' and Computer == 'r') or (user == 'p' and Computer == 's') or (user == 'r' and Computer == 'p'):
+        return 'Your Loss'
 print(play())
