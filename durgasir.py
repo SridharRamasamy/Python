@@ -1678,7 +1678,7 @@
 # For every python, there is a default object class, from which default constructor & destructor will come(Even if we dont provide explicitly)
 # # # # # # # # # # -------------------------------------------------------------------------------------------------------------------------------
 
-# # # Completed
+# # # "Completed"
 # # # # ------------
 # # # # Class
 # # # # object
@@ -2040,3 +2040,98 @@
 # t=Test(10,20,30,40,50,50,60,60,34,234,234,232,4,24,24,2,2)
 # # # # # # # # -------------------------------------------------------------------------------------------------------------------------------
 
+
+# # # "Completed"
+# # # # ------------
+# # # # Class
+# # # # object
+# # # # reference variable
+# # # # types of variables
+# # # # types of methods
+# # # # constructors
+# # # # self/cls variable
+# # # # inner class
+# # # # nested methods
+# # # # setter & getter
+# # # # GC & destructors - import gc gc.isenabled(), gc.enable(), gc.disable()
+# # # # Overloading 
+# # # #         1.  Operator overloading - Possible in pyhton
+# # # #         2.  Method overloading - Not Possible in pyhton(Instead default arguments(self, a=None) & Variable length arguments are possible((self, *a)), will take the most recent method
+# # # #         2.  Constructor overloading - Not possible in python, will take the most recent method
+ 
+# # # # # # # # -------------------------------------------------------------------------------------------------------------------------------
+# # # # Method overriding
+# # # # ------------
+# # # # Inheritance - Parent & Child class
+# # # # ------------
+# # # # 1. Code reusability
+# # # # 2. Exsisting functionality we can extend
+# # # # ------------
+# # # # class parent:
+# # # #          10 methods are there (if you want some more methods(5 methods) in the class)/(or these methods are to be used in another class)
+# # # # class child(parent, parent1, parent2, parent3):       
+# # # #          10 + 5 methods = 15 methods         # # # # By default, the methods of parent classes are available to the child class            
+# # # # # # # # -------------------------------------------------------------------------------------------------------------------------------
+# class parent:
+#         def property(self):
+#                 print("cash+land+gold+power")
+#         def marry(self):
+#                 print("sublakshmi")
+# class child(parent): pass               # # # # ---> child doesnot have any methods but enjoying with parent methods
+#         def marry(self):
+#                 super().marry()
+#                 print("Katrina kaif")            # # # # Overriding--->If the child is not satisfied with parent implementation, then the redefine the method based on requirement
+# c=child()
+# c.property()
+# c.marry()
+# # # # # # # # -------------------------------------------------------------------------------------------------------------------------------
+# # # # # # # # ---------
+# # # Loan functionality:
+# # # # # # # # # # # # # ---------
+# # # # # Home loan
+# # # # # Car loan
+# # # # # Personal loan
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # ## # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
+# # #
