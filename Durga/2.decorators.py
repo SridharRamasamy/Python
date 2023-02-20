@@ -406,8 +406,83 @@
 # print("statement-1")
 # try:
 #     print(10/0)
-# except ZeroDivisionError:
+# except ZeroDivisionError:                  # # # Normal termination/Graceful termination with try-except
 #     print(10/2)
 # print("statement-3")  
+# # # # # # # -------------------------------------------
 
 
+# # # Control flow in try-except
+# # # # # # # -----------------------------------------------------------------------------------------------------------------------
+# # # try:
+# # #     statement = 1
+# # #     statement = 2
+# # #     statement = 3
+# # # except xxx:
+# # #     statement = 4
+# # # statement = 5
+# # # 1. If there is no exception -1,2,3,5,NT
+# # # 2. If an exception(ValueError) is encountered at statement-2 and except block(ValueError) matched - 1,4,5, NT
+# # # 3. If an exception(ValueError) is encountered at statement-2 and except block(PermissionError) not matched - 1,AT
+# # # 4. If an exception(ValueError) is encountered at statement-4 - AT
+# # # 5. If an exception(ValueError) is encountered at statement-5 , it is not part of try block - AT
+# # # # # # # ------------------------------------------------------------------------------------------
+# # # 6. If an exception is encountered at try block, rest of the try block wont be executed even though, we handled that exception
+# # # 7. If any statement causes an exception ehich is not part of try block, then it is always abnormal termination(AT)
+# # # 8. There may be a chance of raising exceptions inside except block also.
+# # # # # # # ------------------------------------------------------------------------------------------------------------------------
+# # # try:
+# # #     statement = 1
+# # #     statement = 2
+# # #     statement = 3
+# # # except xxx:
+# # #     try:
+# # #         statement = 4
+# # #     except xxx:
+# # #         statement = 4A
+# # # statement = 5
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+
+
+# # # How to print exception information?
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:
+#     print(10/0)
+# except ZeroDivisionError as e:                  # # # e(can be user-defined) is the reference variable to exception object
+#     print(e)
+#     print("Exception raised:",e.__class__.__name__, e)                                    # # # Going to provide description related to the error
+#     print(10/2)
+# print("statement-3")  
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:
+#     print(10/0)
+# except BaseException as msg:                  # # # msg(can be user-defined) is the reference variable to exception object
+#     print(msg)                                    # # # Even in BaseException(Parent) is mentioned. ZeroDivision(Child) will be displayed
+#     print("Exception raised:",msg.__class__.__name__, msg)                                    # # # Going to provide description related to the error
+#     print("Exception raised:",type(msg).__name__)                                    # # # Going to provide description related to the error
+#     print(10/2)
+# print("statement-3")  
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:
+#     x = int("10.5")                           # # # Invalid: To convert a string to int, it shouldnot be float
+# except ZeroDivisionError as e:                  # # # Since it is a child(ZeroDivision), it cannot handle (Parent)
+#     print(e)
+#     print("Exception raised:",e.__class__.__name__, e)                                    
+#     print(10/2)
+# print("statement-3")  
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:
+#     x = int("10.5")                           # # # Invalid: To convert a string to int, it shouldnot be float
+# except BaseException as e:                  # # # Since it is a child(ZeroDivision), it cannot handle (Parent)
+#     print(e)
+#     print("Exception raised:",e.__class__.__name__, e)                                    
+#     print(10/2)
+# print("statement-3")  
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+
+    
+    
