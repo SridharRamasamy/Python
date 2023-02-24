@@ -483,6 +483,52 @@
 #     print(10/2)
 # print("statement-3")  
 # # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:                            # # # Multiple chances of failures. The way of handling exception varies from exception to exception
+#                                  # # # For every exception, it is always recommended to use seperate exception block
+#     x = int(input("Enter First number :"))                          
+#     y = int(input("Enter Second number :"))
+#     print(x/y)
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# # # # try:
+# # # #     ---------
+# # # #     ---------
+# # # #     ---------
+# # # # except ArithmeticError:
+# # # #     Perform alternative arithmetic operations
+# # # # except FileNotFoundError:
+# # # #     use local file instead of remote file
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:                            # # # Multiple chances of failures. The way of handling exception varies from exception to exception
+#                                  # # # For every exception, it is always recommended to use seperate exception block
+#     x = int(input("Enter First number :"))        # # #  10, 10                 
+#     y = int(input("Enter Second number :"))       # # #  0, twe
+#     print(x/y)
+# except ZeroDivisionError:
+#     print("Zero division error raised.")
+# except ValueError:
+#     print("Value error raised.")
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# # # # If multiple except blocks available, then PVM will always consider from top to bottom (ie. Order of except blocks is important)
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+# print("statement-1")
+# try:                            # # # Multiple chances of failures. The way of handling exception varies from exception to exception
+#                                  # # # For every exception, it is always recommended to use seperate exception block
+#     x = int(input("Enter First number :"))        # # #  10, 10                 
+#     y = int(input("Enter Second number :"))       # # #  0, twe
+#     print(x/y)
+# except BaseException as e:
+#     print("BaseException raised", e.__class__.__name__)
+# except ZeroDivisionError:
+#     print("Zero division error raised.")
+# except ValueError:
+#     print("Value error raised.")
+# # # # # # # --------------------------------------------------------------------------------------------------------------
+
+
+
+                   
 
     
     
