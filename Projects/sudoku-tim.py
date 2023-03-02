@@ -1,6 +1,3 @@
-from hashlib import algorithms_available
-
-
 # # # # Naive algorithm - (Try every number in every spaces = 9^81) --> Occupies a lot of memory and time
 # # # # Backtracking algorithm 
 # # 1. Pick empty squares
