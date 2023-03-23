@@ -428,15 +428,184 @@
 #         print(chr(64+n-j), end =" ")
 #     print()
 # # # -------------------------------------------------------------------------------------------------------------
-# # # Pattern - 29
+# # # Pattern - 29 
 # # To print pyramid pattern with * symbol
 # #     *
 # #    * *
 # #   * * *
 # #  * * * *
 # # * * * * *
-n = int(input("Enter the number of rows:"))
-for i in range(n):
-    print(((n-i-1)*" ")+("*"*(i+1)))
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((n-i-1)*" ")+("* "*(i+1)))
+# # # Number of spaces in every row: n-i-1
+# # # How many times  to be print: i+1
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 30 
+# # To print pyramid pattern with fixed digit in every row
+# #     1
+# #    2 2
+# #   3 3 3
+# #  4 4 4 4
+# # 5 5 5 5 5 
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print((n-i-1)*" "+(str(i+1)+" ")*(i+1))
+# # # Number of spaces in every row: n-i-1
+# # # How many times  to be print: i+1
+# # # What to be print: str(i+1)+ " "
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 31 
+# # To print pyramid pattern with fixed alphabet symbol in every row
+# #     A
+# #    B B
+# #   C C C
+# #  D D D D
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print((n-i-1)*" "+(chr(i+65)+" ")*(i+1))
 # # # Number of spaces in every row: n-i-1
 # # # How many times * to be print: i+1
+# # # What to be print: chr(65+i) + " "
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 32 
+# # To print pyramid pattern with digits ascending in every row
+# #     1
+# #    1 2
+# #   1 2 3
+# #  1 2 3 4
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((n-i-1)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(i+1):
+#         print(str(j+1), end =" ")
+#     print()
+# # # Number of spaces in every row: n-i-1
+# # # How many times to be print: i+1
+# # # What to be print: j+1
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 33 
+# # To print pyramid pattern with alphabet symbols in dictionary order in every row
+# #     A
+# #    A B
+# #   A B C
+# #  A B C D
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((n-i-1)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(i+1):
+#         print(chr(64+j+1), end =" ")
+#     print()
+# # # Number of spaces in every row: n-i-1
+# # # How many times to be print: i+1
+# # # What to be print: j+65
+
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 34 
+# # To print pyramid pattern with digits in descending order in every row
+# #     5
+# #    5 4
+# #   5 4 3
+# #  5 4 3 2
+# # # 5 4 3 2 1
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((n-i-1)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(i+1):
+#         print(str(n-j), end =" ")
+#     print()
+# # # Number of spaces in every row: n-i-1
+# # # How many times to be print: i+1
+# # # What to be print: j+1
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 35 
+# # To print pyramid pattern with alphabet symbols in reverse of dictionary order in every row
+# #     E
+# #    E D
+# #   E D C
+# #  E D C B
+# # E D C B A
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((n-i-1)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(i+1):
+#         print(chr(64+n-j), end =" ")
+#     print()
+# # # Number of spaces in every row: n-i-1
+# # # How many times to be print: i+1
+# # # What to be print: j+65
+
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 36 
+# # To print inverted pyramid pattern with * symbols
+# # * * * * *
+# #  * * * *
+# #   * * *
+# #    * *
+# #     *
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" ")+("* "*(n-i)))
+# # # Number of spaces in every row: i
+# # # How many times  to be print: n-i
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 37 
+# # To print inverted pyramid pattern with fixed digits in every row
+# #    1 1 1 1 
+# #     2 2 2 
+# #      3 3
+# #       4
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" ")+((str(i+1)+ " ")*(n-i)))
+# # # Number of spaces in every row: i
+# # # How many times to be print: n-i
+# # # What to be print: (str(i+1)+ " ")
+  
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 38 
+# # To print inverted pyramid pattern with fixed alphabet symbol in every row
+# #    A A A A 
+# #     B B B
+# #      C C
+# #       D
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" ")+((chr(i+65)+ " ")*(n-i)))
+# # # Number of spaces in every row: i
+# # # How many times to be print: n-i
+# # # What to be print: (chr(i+65)+ " ")
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 39 
+# # To print pyramid pattern with alphabet symbols in reverse of dictionary order in every row
+# #   1 2 3 4 5
+# #    1 2 3 4
+# #     1 2 3
+# #      1 2
+# #       1 
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(n-i):
+#         print(str(j+1), end =" ")
+#     print()
+# # # Number of spaces in every row: i
+# # # How many times to be print: n-i
+# # # What to be print: str(j+1)
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 40 
+# # To print pyramid pattern with alphabet symbols in reverse of dictionary order in every row
+# #   A B C D
+# #    A B C
+# #     B C
+# # #      C
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(n-i):
+#         print(chr(64+j+1), end =" ")
+#     print()
+# # # Number of spaces in every row: i
+# # # How many times to be print: n-i
+# # # What to be print: chr(64+j+1)
+  
