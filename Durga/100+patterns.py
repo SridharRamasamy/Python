@@ -647,11 +647,20 @@
 # # # -------------------------------------------------------------------------------------------------------------
 # # # Pattern - 43 
 # # To print diamond pattern with * symbols 
-# #   E D C B A
-# #    D C B A
-# #     C B A
-# #      B A
-# #       A
+ # #    *
+# #    * *
+# #   * * *
+# #  * * * *
+# # * * * * *
+# #  * * * *
+# #   * * *
+# #    * *
+# #     *
 # n = int(input("Enter the number of rows:"))
 # for i in range(n):
-  
+#     print(((n-i-1)*" ")+("* "*(i+1)))
+# for i in range(n-1):
+#     print(((i+1)*" ")+("* "*(n-i-1)))
+# # # Number of spaces in every row: (n-i-1) & i+1
+# # # How many times to be print: i+1 & (n-i-1)
+# # # What to be print: *
