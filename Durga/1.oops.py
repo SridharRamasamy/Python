@@ -21,7 +21,7 @@
 # # # Logging module
 # # # Assertions
 # # # File Handling
-# # # OOPS
+# # # OOPS - 
 # # # Regular expressions
 # # # Multi threading
 # # # PDBC (Python Database connectivity)
@@ -170,8 +170,8 @@
 
 
 
-# # # The first argument for instance method/ constructor method should always be "self"(self is not a predefined word, whatever we use as first argument, python will consider it as a self variable))
-# # # Self is an implicit variable which is always provided by PVM
+# # The first argument for instance method/ constructor method should always be "self"(self is not a predefined word, whatever we use as first argument, python will consider it as a self variable))
+# # Self is an implicit variable which is always provided by PVM
 # class employee:
 #     '''doc string(documentation)'''
 #     def __init__(x,empnumber,empname,empsalary,empaddr):   # #__init__(double underscore)  # # constructor method
@@ -197,7 +197,7 @@
 # e2.info()
 # e3.info()
 # e4.info()
-# # # # ---------------------------------------------------------------------------------------
+# # # ---------------------------------------------------------------------------------------
 
 
 # # # Constructor:
@@ -208,7 +208,7 @@
 # # # The main purpose of the constructor:  is to declare & initialize the instance variables related to that object
 # # # For every object, constructor will be executed only once
 # # # Constructor must use self argument
-# # #Constructor is mandatory for every class( if we dont write any constructor, PVM will provide a default constructor)
+# # # Constructor is mandatory for every class(if we dont write any constructor, PVM will provide a default constructor)
 
 # class test:
 #     def __init__(self):
@@ -219,16 +219,16 @@
 # y = test()
 
 
-# # class test:
-# #     def __init__(self):
-# #         print("Constructor execution...........")          # # This constructor method will not be considered once you put the second constructor method
-# #         print("No arguments...........")
-# #     def __init__(self,x):
-# #         print("Constructor execution...........")
-# #         print("One arguments...........")
-# # # s = test()
-# # x = test(10)
-# # y = test(20)
+# class test:
+#     def __init__(self):
+#         print("Constructor execution...........")          # # This constructor method will not be considered once you put the second constructor method
+#         print("No arguments...........")
+#     def __init__(self,x):
+#         print("Constructor execution...........")
+#         print("One arguments...........")
+# # s = test()
+# x = test(10)
+# y = test(20)
 # # # Two methods with the same name but with different arguments = Overloaded constructors, In Python method overloading/ Constructor overloading comcepts are not available
 # # # Whenever we are creating the second method the first one will be nomore or overwritten or will not be considered or will consider only the last constructor created
 # # # Object creation****** has to be done outside of the class
@@ -247,6 +247,9 @@
 # s=student("sridhar",100)
 # s.__init__("Sasi",100)
 # s.__init__("Sasi",100)
+# s.__init__
+# s.__init__
+# s.__init__
 # s.__init__
 # s.__init__
 # s.display()
@@ -344,7 +347,7 @@
 #     # # # # @classmethod                          # Decorator @Classmethod (mandatory) has to be used to show that it is a class method
 #     # # # # def getSchoolName(x):                                    #
 #     # # # #     print("College name is ", x.name)  #cls is not predefined(like self) We can name it in different ways also
-#     # # #-------------------------------------------------------------------
+#     # # #--------------------------------------------------------------------------------------------------
 #     # # #Static method:
 #     # # # No self/cls variable for static method
 #     # # # Below method(static method) never talks about object level/ Class level variables. Its just a utility method which is called static method
@@ -478,7 +481,7 @@
 # print(s2.__dict__)
 # del s2.name                 # # #  it doesnot just delete the value of the variable. It deletes the variable itself for that particular object
 # print("Just Testing", s1.name)                 # # #  s1.name works
-# print("Just Testing", s2.name)                 # # #  s2.name willnot work
+# # print("Just Testing", s2.name)                 # # #  s2.name willnot work
 # print(s2.__dict__)
 # s1.a=888
 # s1.b=999
@@ -542,14 +545,22 @@
 # t1 = Test()
 # t1.m2()
 # print(t1.__dict__)
+# print("1.**************************************************************")
 # print(Test.__dict__)
-# # # # What are the static variables in the above program?2(a & g) only
+# # # What are the static variables in the above program, if you print like (Test.__dict__)?2(a & g) only.......
+# # # v is not available as we are not creating an object...b & c is not available as we are not calling that particular method...
+# print("2.**************************************************************")
 # t1=Test()
 # print(Test.__dict__)
+# print("3.**************************************************************")
 # t1.m1()                                 # # # t1.m1()..self not considers & Test.m1(1)..self is considered as a variable --> No error
-# print(Test.__dict__)                    # # # t1.m1() ..cls not considers & Test.m1()..cls is not considered as a variable --> No error
-# Test.m2(1)
+# print(Test.__dict__)                    # # # t1.m2() ..cls not considers & Test.m2()..cls is not considered as a variable --> No error
+# print("4.**************************************************************")
+# Test.m1(1)
+# print("5.**************************************************************")
+# Test.m2()
 # print(Test.__dict__)
+# print("6.**************************************************************")
 # t1.m3(1)
 # print(Test.__dict__)
 
@@ -564,7 +575,7 @@
 #     a=10
 #     def __init__(self):
 #         print("Inside constructor method...")
-#         print(Test.a)
+#         print(Test.a)s
 #         print(self.a)
 #     def m1(self):
 #         print("Inside Instance method...")
@@ -585,7 +596,7 @@
 # t.m3()
 # print("From outside of the class", Test.a, t.a)
 
-# # # # ---------------------------------------------------------------------------------------------------------------------------
+# # # # # ---------------------------------------------------------------------------------------------------------------------------
 # class Test:
 #     a=10
 #     def __init__(self):
@@ -612,10 +623,10 @@
 # t.m3()
 # print("From outside of the class", Test.a, t.a)
 
-# # # ----------------------------------------------------------------------------------------
-# # #  How to modify static variables?
-# # # Within the class we should use ----classname, cls
-# # # Outside of the class --------------only classname    (Self is not applicable for static variable)
+# # # # ----------------------------------------------------------------------------------------
+# # # #  How to modify static variables?
+# # # # Within the class we should use ----classname, cls
+# # # # Outside of the class --------------only classname    (Self is not applicable for static variable)
 
 # class Test:
 #     a=10
@@ -624,7 +635,7 @@
 # t=Test()
 # print(Test.a)
 # print(t.a)
-# # # # # ---------------------------------------------------------------------------------------------------------------------------
+# # # # # # ---------------------------------------------------------------------------------------------------------------------------
 # class Test:
 #     a=10
 #     def __init__(self):
@@ -674,7 +685,10 @@
 #         self.a=20
 #         del Test.a
 # t=Test()
+# print("1.**************************************************************")
 # print(Test.__dict__)
+# print(t.a)
+# print("2.**************************************************************")
 # Test.a = 33
 # print(Test.__dict__)
 # print(Test.a)
@@ -691,7 +705,7 @@
 # t1.y = 999
 # print(t1.x, t1.y)
 # print(t2.x, t2.y)
-# # # ---------------------------------------------------------------------------------------------------------------------------
+# # # ----------------- ----------------------------------------------------------------------------------------------------------
 # class Test:
 #     x=10
 #     def m1(self):
@@ -700,15 +714,18 @@
 # t2=Test()
 # t1.x = 888
 # t1.y = 999
+# t2.m1()
 # print(t1.x, t1.y)
 # print(t2.x, t2.y)   # # We will get the error as the instance method is not called and attribute "y" is not defined outside class
-# # # -------------------------------------------------------------------------------------------------
+# # -------------------------------------------------------------------------------------------------
 # class Test:
 #     x=10
 #     def __init__(self):
 #         self.y=20
 # t1=Test()
 # t2=Test()
+# print(t1.x, t1.y)
+# print(t2.x, t2.y)
 # Test.x = 888
 # t1.y = 999
 # print(t1.x, t1.y)
@@ -739,8 +756,8 @@
 # t.m2()
 # # # ----------------------------------------------------------------------------------------------
 # class Test:
-#     def average(self,list):
-#         result=sum(list)/len(list)                # #result(a temporary/local variable) to hold the value temporarily for a particular object
+#     def average(self,lis):
+#         result=sum(lis)/len(lis)                # #result(a temporary/local variable) to hold the value temporarily for a particular object
 #         print("The Average value is:", result)
 # t=Test()
 # t.average([10,20,30,40,60])
@@ -1195,7 +1212,7 @@
 # t=test()
 # t.m1(10)
 # # # Invalid
-# # # Typeerrori: m1() takes 1 positional arguments but 2 were given
+# # # Typeerror: m1() takes 1 positional arguments but 2 were given
 # # # # ----------------------------------------------------------------------------------------------
 # # # # ----------------------------------------------------------------------------------------------
 # # # # Inner class:
@@ -1268,7 +1285,7 @@
 #                         print("Inner class object creation")
 #                 def m1(self):
 #                         print("Inner class method")
-# # Outer class contains constructor & inner class. Inner class contains constructor & instance method
+# # Outer class contains constructor, instance method & inner class. Inner class contains constructor & instance method
 # # We cannot access inner class method directly. Outer class object --> Inner class object --> Inner class method
 # o=outer()               # We are creating object here = outer class object
 # i=o.inner()

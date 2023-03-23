@@ -426,3 +426,23 @@
 
 # # # #  Move all negative numbers to the end of the list. List = [3,4,5,-2,-1,8,0,-5,6]
 
+def solution(arg1, arg2):
+    if arg1%2 == 0 or arg2%2 == 0:
+        return False
+    elif arg1%2 != 0 or arg2%2 == 0:
+        return False
+    elif arg1%2 == 0 or arg2%2 != 0:
+        return False
+    elif arg1%2 != 0 or arg2%2 != 0:
+        return True
+print(solution(3,6))
+
+
+
+Write the function solution which takes an integer as input and returns the sum of all the digits.
+
+Examples:
+
+2 -> 2
+123 -> 6 (1 + 2 + 3)
+1357 -> 16 (1 + 3 + 5 + 7)
