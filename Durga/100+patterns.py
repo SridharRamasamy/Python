@@ -598,7 +598,7 @@
 # #   A B C D
 # #    A B C
 # #     B C
-# # #      C
+# # #    C
 # n = int(input("Enter the number of rows:"))
 # for i in range(n):
 #     print(((i)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
@@ -608,4 +608,50 @@
 # # # Number of spaces in every row: i
 # # # How many times to be print: n-i
 # # # What to be print: chr(64+j+1)
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 41 
+# # Inverted pyramid pattern with digits in descending order in every row
+# #   5 4 3 2 1
+# #    4 3 2 1
+# #     3 2 1
+# #      2 1
+# #       1
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(n-i):
+#         print(str(n-j), end =" ")
+#     print()
+# # # Number of spaces in every row: i
+# # # How many times to be print: n-i
+# # # What to be print: str(n-j)
+  
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 42 
+# # Inverted pyramid pattern with alphabet symbols in reverse of dictionary order in every row
+# #   E D C B A
+# #    D C B A
+# #     C B A
+# #      B A
+# #       A
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
+#     print(((i)*" "),end =" ")     # # This will just print the front spaces and the printing of next for loop will be continued in the same line as we are using end=" "
+#     for j in range(n-i):
+#         print(chr(64+n-j), end =" ")
+#     print()
+# # # Number of spaces in every row: i
+# # # How many times to be print: n-i
+# # # What to be print: chr(64+n-j)
+
+# # # -------------------------------------------------------------------------------------------------------------
+# # # Pattern - 43 
+# # To print diamond pattern with * symbols 
+# #   E D C B A
+# #    D C B A
+# #     C B A
+# #      B A
+# #       A
+# n = int(input("Enter the number of rows:"))
+# for i in range(n):
   
